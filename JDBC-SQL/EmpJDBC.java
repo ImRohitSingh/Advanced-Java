@@ -10,8 +10,8 @@ public class EmpJDBC
 {
     static final String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";
     static final String JDBC_URL = "jdbc:oracle:thin:@localhost:1521:xe";
-    static final String USERNAME = "jeet93";
-    static final String PASSWORD = "3j4doNKW#$";
+    static final String USERNAME = ""; // please fill you own username
+    static final String PASSWORD = ""; // please use your own password
     public static void main(String[] args) 
     {
         ResultSet rs;
