@@ -9,9 +9,9 @@ import java.io.Serializable;
  */
 public class Student implements Serializable
 {
-    int empId;
-    String empName;
-    float marks1, marks2, marks3;
+    private int empId;
+    private String empName;
+    private float marks1, marks2, marks3;
     
     public Student(){}
     
