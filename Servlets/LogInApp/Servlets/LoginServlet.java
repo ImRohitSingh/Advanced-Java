@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet
         String name = request.getParameter("name");
         String password = request.getParameter("password");
         
-        if( password.equals("aaleya") )
+        if( password.equals("rohit") )
         {
             RequestDispatcher rd = request.getRequestDispatcher("loggedInLinks.html");
             rd.include(request, response);
