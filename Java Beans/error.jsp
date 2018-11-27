@@ -5,7 +5,7 @@
 --%>
 
 <%@page isErrorPage = "true" %>
-<%@page import="java.util.Date"%>
+<%@page import = "java.util.Date" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,7 +18,17 @@
             <h3>Name: Rohit Singh</h4>
             <h4>ID: 56EFJL3</h5>
         </header>
-        <h3>Please enter integer values for Student ID and floating point values for Marks!</h3>
+         <% String error = (String)session.getAttribute("error");
+            if( error.equals("id") )
+            { 
+                out.println("<h3>Please enter integer values for ID! </h3><br/>");
+            }
+            else if( error.equals("marks") )
+            {
+                out.println("<h3>Please enter floating point values for Marks! </h3><br>");
+            }
+        %>
+            
         <a href = "index.jsp" >Return to homepage</a>
         <br/><br/>
         <footer>
