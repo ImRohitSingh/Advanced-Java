@@ -14,8 +14,8 @@ public class StudentJDBC
 {
     final static String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";
     final static String JDBC_URL = "jdbc:oracle:thin:@localhost:1521:xe";
-    final static String USERNAME = "jeet93";
-    final static String PASSWORD = "3j4doNKW#$";
+    final static String USERNAME = "uname";
+    final static String PASSWORD = "pass"; // use your own usernames and passwords
     public static void main(String[] args) 
     {
         String createQuery, name;
