@@ -15,7 +15,7 @@
     <body>       
         <%  try
             {
-                int x = Integer.parseInt(request.getParameter("empId"));
+                int x = Integer.parseInt(request.getParameter("stuId"));
             }
             catch(NumberFormatException nfe)
             {
@@ -43,8 +43,8 @@
             <h4>ID: 56EFJL3</h5>
         </header>
         <h5>Requested Details</h5>
-        <p>ID: <%=obj.getEmpId()%></p>
-        <p>Name: <%=obj.getEmpName()%></p>
+        <p>ID: <%=obj.getStuId()%></p>
+        <p>Name: <%=obj.getStuName()%></p>
         <p>Marks in Algorithm: <%=obj.getMarks1()%></p>
         <p>Marks in Java: <%=obj.getMarks2()%></p>
         <p>Marks in Cryptography: <%=obj.getMarks3()%></p>
