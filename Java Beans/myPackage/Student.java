@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package myPackage;
 
 import java.io.Serializable;
@@ -9,20 +13,20 @@ import java.io.Serializable;
  */
 public class Student implements Serializable
 {
-    private int empId;
-    private String empName;
+    private int stuId;
+    private String stuName;
     private float marks1, marks2, marks3;
     
     public Student(){}
     
-    public int getEmpId()
+    public int getStuId()
     { 
-        return empId; 
+        return stuId; 
     }
-    public void setEmpId(int empId){ this.empId = empId; }
+    public void setStuId(int stuId){ this.stuId = stuId; }
     
-    public String getEmpName(){ return empName; }
-    public void setEmpName(String empName){ this.empName = empName; }
+    public String getStuName(){ return stuName; }
+    public void setStuName(String stuName){ this.stuName = stuName; }
     
     public float getMarks1(){ return marks1; }
     public void setMarks1(float marks1){ this.marks1 = marks1; }
