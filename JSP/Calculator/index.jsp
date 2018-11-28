@@ -4,7 +4,7 @@
     Author     : Rohit
 --%>
 
-<%@page import="java.util.Date"%>
+<%@page import = "java.util.Date" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
