@@ -5,7 +5,7 @@
 --%>
 
 <%@page errorPage = "calError.jsp" %>
-<%@page import="java.util.Date"%>
+<%@page import = "java.util.Date" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,7 +22,7 @@
         <jsp:setProperty name = "obj" property = "*" />
         
         <!--String c = request.getParameter("operator"); This could also may have been done. 
-            But then the switch case would have to implemented in a different way. -->
+            But then the switch case would have to be implemented in a different way. -->
         <% char c = request.getParameter("operator").charAt(0); %>
         
         <%=obj.getX()%>&nbsp;<%=c%>&nbsp;<%=obj.getY()%>&nbsp;=&nbsp;
