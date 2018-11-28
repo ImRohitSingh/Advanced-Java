@@ -20,6 +20,6 @@ public class Calculator implements Serializable
     public int add(){ return x+y; }
     public int minus(){ return x-y; }
     public int multiply(){ return x*y; }
-    public float divide(){ return (float)(x/y); }
+    public float divide(){ return (y!=0?(float)x/y:(float)(x/y)); }
     public int modulus(){ return x%y; }
 }
