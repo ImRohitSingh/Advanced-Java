@@ -2,7 +2,8 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
-import java.util.StringTokenizer;
+//import java.util.StringTokenizer;
+import java.util.Arrays;
 
 public class Sort implements ActionListener 
 {
@@ -83,11 +84,19 @@ public class Sort implements ActionListener
 		if ( ae.getSource() == sort)
 		{
 			int num[], count = 0, i, j, temp;
-			String etc = "";
 			toWork = dataSet.getText();
 			if( ! (toWork.equals(textStr)) )
 			{
-				StringTokenizer st = new StringTokenizer(toWork," ");
+				String numbers[] = toWork.split(" ");
+				num = new int[numbers.length];
+				
+				i = 0;
+				for( String etc: numbers )
+						num[i++] = Integer.parseInt(etc);
+				
+				
+				// ANOTHER LOGIC 
+				/*StringTokenizer st = new StringTokenizer(toWork," ");
 				while(st.hasMoreTokens())
 				{
 					etc = st.nextToken();
@@ -108,14 +117,20 @@ public class Sort implements ActionListener
 					{
 						
 					}
-				}
-				for( i = 1; i < num.length; ++i )
+				}*/
+				
+				Arrays.sort(num); // call the sort function
+				
+				// OR perform insertion sort
+				/*for( i = 1; i < num.length; ++i )
 				{
 					temp = num[i];
 					for( j = i-1; j>=0 && num[j]>temp; --j )
 						num[j+1] = num[j];
 					num[j+1] = temp;
-				}
+				}*/
+				
+				
 				toWork = "";
 				for( i = 0; i < num.length; ++i )
 					toWork = toWork + num[i]+ " ";
