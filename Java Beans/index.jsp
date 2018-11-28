@@ -4,7 +4,7 @@
     Author     : Rohit
 --%>
 
-<%@page import="java.util.Date"%>
+<%@page import= "java.util.Date" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -19,9 +19,9 @@
         </header>
         <form action = "accept.jsp" method = "post">
             <p>Enter ID:</p>
-            <input type = "text" name = "empId" required/>
+            <input type = "text" name = "stuId" required/>
             <p>Enter Name:</p>
-            <input type = "text" name = "empName" required />
+            <input type = "text" name = "stuName" required />
             <p>Marks in Algorithm: </p>
             <input type = "text" name = "marks1" required />
             <p>Marks in Java: </p>
